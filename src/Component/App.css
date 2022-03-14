@@ -1,0 +1,112 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.navbar{
+    display: flex;
+}
+.navbar ul{
+    display: flex;    
+}
+.navbar ul li{
+    margin-left: 70px;
+    list-style: none;
+    font-size: 20px;
+    margin-top: 50px;
+    padding: 25px;
+}
+.nav-link{
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+    border-radius: 10px;
+}
+.nav-link:hover{
+    color: white;
+    background: black;
+}
+.Main-image{
+    width: 70vw;
+    height: 90vh;
+    margin: 10px;
+    /* border: 1px solid green; */
+    border-radius: 20px;
+    background:url(/k-img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 20px;
+    
+}
+.first{
+    width: 300px;
+    height: 250px;
+    /* border: 1px solid green; */
+    border-radius: 20px;
+    position: absolute;
+    top: 150px;
+    left: 75%;
+    background:url(/home-img2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.secound{
+    
+    width: 300px;
+    height: 250px;
+    /* border: 1px solid green; */
+    border-radius: 20px;
+    position: absolute;
+    top: 70%;
+    left: 75%;
+    background:url(/home-img3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.text{
+    font-family: sans-serif;
+    text-align: center;
+    position: relative;
+    line-height: 60px;
+    top: 60%;
+    color: white;
+    
+}
+.container{
+    width: 1000px;
+    margin-left: 40px;
+    /* border: 1px solid grey; */
+    display: flex;
+}
+.img{
+    width: 200px;
+    height: 200px;
+    margin-left: 40px;
+}
+.heading-h2{
+    /* position: absolute; */
+    top: 250px;
+    padding: 30px;
+    /* margin-left: 250px; */
+}
+.para{
+
+    /* position: absolute; */
+    top: 300px;
+    left: 250px;
+    padding: 10px;
+}
+.heading-h3{
+    
+    /* position: absolute; */
+    /* margin-top: 400px; */
+    margin-left: 200px;
+}
+span{
+    color: gray;
+}
