@@ -1,46 +1,76 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import './App.css'
 const Navebar = () => {
     return (
         <div>
-            <header>
-                <div className='navbar'>
-                    <ul>
-                        <li >
-                            <Link to='./home' className='nav-link'>Home</Link>
 
-                        </li>
+            <div className='navbar'>
+                <NavLink
+                    style={({ isActive }) => {
+                        return {
+                            // color:isActive ? 'blue' : 'black',
+                            borderBottom: isActive ? '10px solid darkred' : ' 10px solid white'
 
-                        <li>
-                            <Link to='./Tourism' className='nav-link'>Tourism</Link>
+                        }
+                    }}
+                    to='/home' className='nav-link'>Home</NavLink>
 
-                        </li>
 
-                        <li>
-                            <Link to='./Fitness' className='nav-link'>Fitness</Link>
+                <NavLink style={({ isActive }) => {
+                    return {
 
-                        </li>
+                        // color:isActive ? 'blue' : 'black',
+                        borderBottom: isActive ? '10px solid darkred' : ' 10px solid white'
 
-                        <li>
-                            <Link to='./Technology' className='nav-link'> Technology</Link>
+                    }
+                }} to='/tourism' className='nav-link'>Tourism</NavLink>
 
-                        </li>
 
-                        <li>
-                            <Link to='./Bollywood' className='nav-link'> Bollywood</Link>
+                <NavLink style={({ isActive }) => {
+                    return {
 
-                        </li>
+                        // color:isActive ? 'blue' : 'black',
 
-                        <li>
-                            <Link to='./Food' className='nav-link'>Food</Link>
+                        borderBottom: isActive ? '10px solid darkred' : ' 10px solid white'
+                    }
+                }} to='/fitness' className='nav-link'>Fitness</NavLink>
 
-                        </li>
-                    </ul>
-                </div>
-                <hr />
-            </header>
+                <NavLink style={({ isActive }) => {
+                    return {
+
+                        // color:isActive ? 'blue' : 'black',
+                        borderBottom: isActive ? '10px solid darkred' : ' 10px solid white'
+
+                    }
+                }} to='/technology' className='nav-link'> Technology</NavLink>
+
+                <NavLink style={({ isActive }) => {
+                    return {
+
+                        // color:isActive ? 'blue' : 'black',
+                        borderBottom: isActive ? '10px solid darkred' : ' 10px solid white'
+
+                    }
+                }} to='/bollywood' className='nav-link'> Bollywood</NavLink>
+
+                <NavLink style={({ isActive }) => {
+                    return {
+
+                        // color:isActive ? 'blue' : 'black',
+                        borderBottom: isActive ? '10px solid darkred' : ' 10px solid white'
+
+                    }
+                }} to='/food' className='nav-link'>Food</NavLink>
+
+
+
+            </div>
+
+            <hr />
+
         </div>
+
     )
 }
 
